@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Althaf Haaris | Learn with Althaf</title>
+
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <style>
+
+        /* =========================================================
+           ALTHAF HAARIS — ABOUT PAGE
+           ========================================================= */
+
+        .althaf-about {
+            width: 100%;
+            background: #ffffff;
+            color: #111111;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .althaf-about *,
+        .althaf-about *::before,
+        .althaf-about *::after {
+            box-sizing: border-box;
+        }
+
+
+        /* =========================================================
+           MAIN WRAPPER
+           ========================================================= */
+
+        .althaf-about-wrap {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 75px 40px 90px;
+        }
+
+
+        /* =========================================================
+           INTRO
+           ========================================================= */
+
+        .althaf-intro {
+            text-align: center;
+            margin-bottom: 70px;
+        }
+
+        .althaf-intro-label {
+            margin-bottom: 12px;
+
+            font-size: 10px;
+            font-weight: 700;
+
+            letter-spacing: 3px;
+            text-transform: uppercase;
+
+            color: #999999;
+        }
+
+        .althaf-intro h1 {
+            margin: 0;
+
+            font-size: 48px;
+            line-height: 1.1;
+
+            font-weight: 700;
+            letter-spacing: -1.5px;
+
+            color: #111111;
+        }
+
+        .althaf-intro-line {
+            width: 42px;
+            height: 2px;
+
+            margin: 20px auto;
+
+            background: #111111;
+        }
+
+        .althaf-intro p {
+            max-width: 700px;
+
+            margin: 0 auto;
+
+            font-size: 16px;
+            line-height: 1.8;
+
+            color: #666666;
+        }
+
+
+        /* =========================================================
+           PROFILE
+           ========================================================= */
+
+        .althaf-profile {
+            display: grid;
+
+            grid-template-columns: 46% 54%;
+
+            align-items: center;
+
+            gap: 0;
+        }
+
+
+        /* =========================================================
+           PHOTO
+           ========================================================= */
+
+        .althaf-photo-side {
+            position: relative;
+
+            width: 100%;
+            height: 580px;
+
+            display: flex;
+
+            justify-content: center;
+            align-items: flex-end;
+
+            overflow: hidden;
+        }
+
+        .althaf-photo-side::before {
+            content: "";
+
+            position: absolute;
+
+            width: 410px;
+            height: 410px;
+
+            left: 50%;
+            top: 55px;
+
+            transform: translateX(-50%);
+
+            border-radius: 50%;
+
+            background: #f1f1f1;
+        }
+
+        .althaf-photo-side img {
+            position: relative;
+
+            z-index: 2;
+
+            width: auto;
+            height: 570px;
+
+            display: block;
+
+            object-fit: contain;
+        }
+
+
+        /* =========================================================
+           EXPERIENCE BADGE
+           ========================================================= */
+
+        .althaf-experience-badge {
+            position: absolute;
+
+            z-index: 5;
+
+            left: 25px;
+            bottom: 35px;
+
+            padding: 16px 20px;
+
+            background: #111111;
+            color: #ffffff;
+
+            border-radius: 10px;
+        }
+
+        .althaf-experience-badge strong {
+            display: block;
+
+            margin-bottom: 5px;
+
+            font-size: 27px;
+            line-height: 1;
+        }
+
+        .althaf-experience-badge span {
+            display: block;
+
+            font-size: 9px;
+            line-height: 1.5;
+
+            letter-spacing: 1.2px;
+
+            text-transform: uppercase;
+
+            color: #cccccc;
+        }
+
+
+        /* =========================================================
+           PROFILE CONTENT
+           ========================================================= */
+
+        .althaf-profile-content {
+            width: 100%;
+
+            padding-left: 60px;
+        }
+
+        .althaf-profile-label {
+            margin-bottom: 14px;
+
+            font-size: 10px;
+            font-weight: 700;
+
+            letter-spacing: 2.5px;
+
+            text-transform: uppercase;
+
+            color: #999999;
+        }
+
+        .althaf-profile-content h2 {
+            margin: 0 0 24px;
+
+            font-size: 42px;
+            line-height: 1.1;
+
+            font-weight: 700;
+
+            letter-spacing: -1.4px;
+
+            color: #111111;
+        }
+
+        .althaf-profile-text {
+            max-width: 520px;
+        }
+
+        .althaf-profile-text p {
+            margin: 0 0 18px;
+
+            font-size: 15px;
+            line-height: 1.85;
+
+            color: #666666;
+        }
+
+
+        /* =========================================================
+           STATS
+           ========================================================= */
+
+        .althaf-stats {
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 12px;
+
+            max-width: 520px;
+
+            margin-top: 28px;
+        }
+
+        .althaf-stat {
+            padding: 18px 17px;
+
+            border: 1px solid #e5e5e5;
+
+            border-radius: 10px;
+
+            background: #ffffff;
+        }
+
+        .althaf-stat strong {
+            display: block;
+
+            margin-bottom: 7px;
+
+            font-size: 26px;
+            line-height: 1;
+
+            color: #111111;
+        }
+
+        .althaf-stat span {
+            display: block;
+
+            font-size: 10px;
+            line-height: 1.5;
+
+            color: #777777;
+        }
+
+
+        /* =========================================================
+           DIVIDER
+           ========================================================= */
+
+        .althaf-divider {
+            width: 100%;
+
+            height: 1px;
+
+            margin: 85px 0 60px;
+
+            background: #eeeeee;
+        }
+
+
+        /* =========================================================
+           QUALIFICATIONS
+           ========================================================= */
+
+        .althaf-section-title {
+            text-align: center;
+
+            margin-bottom: 32px;
+        }
+
+        .althaf-section-title small {
+            display: block;
+
+            margin-bottom: 9px;
+
+            font-size: 10px;
+            font-weight: 700;
+
+            letter-spacing: 2.5px;
+
+            text-transform: uppercase;
+
+            color: #999999;
+        }
+
+        .althaf-section-title h2 {
+            margin: 0;
+
+            font-size: 30px;
+            line-height: 1.2;
+
+            color: #111111;
+        }
+
+
+        .althaf-qualification-grid {
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 18px;
+        }
+
+
+        .althaf-qualification {
+            position: relative;
+
+            padding: 30px 28px 28px;
+
+            background: #fafafa;
+
+            border: 1px solid #eeeeee;
+
+            border-radius: 14px;
+
+            text-align: center;
+        }
+
+        /* Small classy top line */
+
+        .althaf-qualification::before {
+            content: "";
+
+            position: absolute;
+
+            top: 0;
+            left: 50%;
+
+            transform: translateX(-50%);
+
+            width: 45px;
+            height: 2px;
+
+            background: #111111;
+        }
+
+        .althaf-qualification h3 {
+            margin: 5px 0 10px;
+
+            font-size: 15px;
+            line-height: 1.4;
+
+            color: #111111;
+        }
+
+        .althaf-qualification p {
+            margin: 0;
+
+            font-size: 12px;
+            line-height: 1.7;
+
+            color: #777777;
+        }
+
+
+        /* =========================================================
+           SUBJECTS
+           ========================================================= */
+
+        .althaf-subjects {
+            margin-top: 70px;
+        }
+
+        .althaf-subjects h2 {
+            margin: 0 0 25px;
+
+            text-align: center;
+
+            font-size: 30px;
+
+            color: #111111;
+        }
+
+        .althaf-subject-list {
+            display: flex;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 10px;
+        }
+
+        .althaf-subject {
+            padding: 10px 18px;
+
+            border: 1px solid #dddddd;
+
+            border-radius: 50px;
+
+            font-size: 12px;
+            font-weight: 600;
+
+            color: #555555;
+
+            background: #ffffff;
+        }
+
+
+        /* =========================================================
+           QUOTE
+           ========================================================= */
+
+        .althaf-quote {
+            margin-top: 70px;
+
+            padding: 50px 35px;
+
+            background: #111111;
+
+            border-radius: 18px;
+
+            text-align: center;
+        }
+
+        .althaf-quote-mark {
+            margin-bottom: 8px;
+
+            font-size: 36px;
+            line-height: 1;
+
+            color: #777777;
+        }
+
+        .althaf-quote p {
+            max-width: 760px;
+
+            margin: 0 auto;
+
+            font-size: 19px;
+            line-height: 1.65;
+
+            color: #ffffff;
+        }
+
+        .althaf-quote-name {
+            margin-top: 17px;
+
+            font-size: 10px;
+            font-weight: 700;
+
+            letter-spacing: 2.5px;
+
+            text-transform: uppercase;
+
+            color: #999999;
+        }
+
+
+        /* =========================================================
+           TABLET
+           ========================================================= */
+
+        @media (max-width: 1000px) {
+
+            .althaf-about-wrap {
+                padding: 60px 30px 75px;
+            }
+
+            .althaf-profile {
+                grid-template-columns: 45% 55%;
+            }
+
+            .althaf-profile-content {
+                padding-left: 40px;
+            }
+
+            .althaf-photo-side {
+                height: 520px;
+            }
+
+            .althaf-photo-side::before {
+                width: 350px;
+                height: 350px;
+            }
+
+            .althaf-photo-side img {
+                height: 510px;
+            }
+
+            .althaf-profile-content h2 {
+                font-size: 36px;
+            }
+
+        }
+
+
+        /* =========================================================
+           MOBILE
+           ========================================================= */
+
+        @media (max-width: 700px) {
+
+            .althaf-about-wrap {
+                padding: 45px 18px 60px;
+            }
+
+
+            .althaf-intro {
+                margin-bottom: 45px;
+            }
+
+            .althaf-intro h1 {
+                font-size: 34px;
+            }
+
+            .althaf-intro p {
+                font-size: 14px;
+                line-height: 1.75;
+            }
+
+
+            .althaf-profile {
+                display: flex;
+
+                flex-direction: column;
+            }
+
+
+            .althaf-photo-side {
+                width: 100%;
+
+                height: 450px;
+
+                order: 1;
+            }
+
+            .althaf-photo-side::before {
+                width: 300px;
+                height: 300px;
+
+                top: 40px;
+            }
+
+            .althaf-photo-side img {
+                height: 470px;
+            }
+
+
+            .althaf-experience-badge {
+                left: 8px;
+                bottom: 18px;
+
+                padding: 14px 17px;
+            }
+
+            .althaf-experience-badge strong {
+                font-size: 23px;
+            }
+
+
+            .althaf-profile-content {
+                width: 100%;
+
+                padding: 40px 0 0;
+
+                order: 2;
+            }
+
+            .althaf-profile-content h2 {
+                font-size: 30px;
+
+                margin-bottom: 20px;
+            }
+
+            .althaf-profile-text p {
+                font-size: 14px;
+
+                line-height: 1.75;
+            }
+
+
+            .althaf-stats {
+                width: 100%;
+
+                grid-template-columns: 1fr 1fr;
+
+                gap: 9px;
+            }
+
+            .althaf-stat {
+                padding: 16px 13px;
+            }
+
+            .althaf-stat strong {
+                font-size: 21px;
+            }
+
+
+            .althaf-divider {
+                margin: 60px 0 45px;
+            }
+
+
+            .althaf-section-title h2 {
+                font-size: 26px;
+            }
+
+
+            .althaf-qualification-grid {
+                grid-template-columns: 1fr;
+
+                gap: 12px;
+            }
+
+
+            .althaf-qualification {
+                padding: 27px 22px;
+            }
+
+
+            .althaf-subjects {
+                margin-top: 55px;
+            }
+
+            .althaf-subjects h2 {
+                font-size: 26px;
+            }
+
+
+            .althaf-quote {
+                margin-top: 55px;
+
+                padding: 38px 20px;
+
+                border-radius: 16px;
+            }
+
+            .althaf-quote p {
+                font-size: 16px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <header class="site-header">
+
+        <div class="header-inner">
+
+<a href="index.html" class="site-name">
+
+    <img
+        src="logo.png"
+        alt="Learn with Althaf"
+        class="site-logo"
+    >
+
+    <div class="site-brand">
+
+        <span class="site-name-main">
+            LEARN WITH ALTHAF
+        </span>
+
+        <span class="site-name-tagline">
+            A Class Beyond the Best
+        </span>
+
+    </div>
+
+</a>
+
+
+            <button
+                class="menu-button"
+                id="menuButton"
+                aria-label="Open menu"
+            >
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         MENU
+         ===================================================== -->
+
+    <nav class="mobile-menu" id="mobileMenu">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a
+            href="https://lms.machmavc.com"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            LMS Access
+        </a>
+
+        <a href="timetable.html">
+            Class Timetable
+        </a>
+
+        <a href="about.html">
+            About Althaf Haaris
+        </a>
+
+        <a href="results.html">
+            Results Book
+        </a>
+
+        <a href="testimonials.html">
+            Students Testimonial
+        </a>
+
+        <a href="contact.html">
+            Connect With Us
+        </a>
+
+    </nav>
+
+
+    <!-- =====================================================
+         ABOUT PAGE
+         ===================================================== -->
+
+    <main>
+
+        <div class="althaf-about">
+
+            <div class="althaf-about-wrap">
+
+
+                <!-- INTRO -->
+
+                <div class="althaf-intro">
+
+                    <div class="althaf-intro-label">
+                        ABOUT
+                    </div>
+
+                    <h1>
+                        Althaf Haaris
+                    </h1>
+
+                    <div class="althaf-intro-line"></div>
+
+                    <p>
+                        ACCA-qualified lecturer with over 10 years of
+                        teaching experience, specialising in teaching
+                        accounting and finance subjects.
+                    </p>
+
+                </div>
+
+
+                <!-- PROFILE -->
+
+                <div class="althaf-profile">
+
+
+                    <!-- PHOTO -->
+
+                    <div class="althaf-photo-side">
+
+                        <img
+                            src="althaf.png"
+                            alt="Althaf Haaris"
+                            loading="lazy"
+                        >
+
+                        <div class="althaf-experience-badge">
+
+                            <strong>
+                                10+
+                            </strong>
+
+                            <span>
+                                Years Teaching<br>
+                                Experience
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CONTENT -->
+
+                    <div class="althaf-profile-content">
+
+                        <div class="althaf-profile-label">
+                            LECTURER • ACCOUNTANT • EDUCATOR
+                        </div>
+
+                        <h2>
+                            Making Accounting Simple.
+                        </h2>
+
+
+                        <div class="althaf-profile-text">
+
+                            <p>
+                                Althaf Haaris is an ACCA-qualified lecturer
+                                with over 10 years of teaching experience,
+                                specialising in teaching accounting and
+                                finance subjects.
+                            </p>
+
+                            <p>
+                                His teaching approach focuses on conceptual
+                                understanding, exam technique and making
+                                difficult accounting concepts simple and
+                                easy to understand.
+                            </p>
+
+                        </div>
+
+
+                        <!-- STATS -->
+
+                        <div class="althaf-stats">
+
+                            <div class="althaf-stat">
+
+                                <strong>
+                                    15
+                                </strong>
+
+                                <span>
+                                    Sri Lanka Rank 01 Winners in ACCA
+                                </span>
+
+                            </div>
+
+
+                            <div class="althaf-stat">
+
+                                <strong>
+                                    2
+                                </strong>
+
+                                <span>
+                                    ACCA World Toppers in FM
+                                </span>
+
+                            </div>
+
+
+                            <div class="althaf-stat">
+
+                                <strong>
+                                    97%
+                                </strong>
+
+                                <span>
+                                    A/L Accounting Pass Rate in 2025
+                                </span>
+
+                            </div>
+
+
+                            <div class="althaf-stat">
+
+                                <strong>
+                                    5,000+
+                                </strong>
+
+                                <span>
+                                    ACCA Students Taught Globally
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DIVIDER -->
+
+                <div class="althaf-divider"></div>
+
+
+                <!-- QUALIFICATIONS -->
+
+                <div class="althaf-section-title">
+
+                    <small>
+                        EDUCATION & EXPERIENCE
+                    </small>
+
+                    <h2>
+                        Qualifications
+                    </h2>
+
+                </div>
+
+
+                <div class="althaf-qualification-grid">
+
+
+                    <div class="althaf-qualification">
+
+                        <h3>
+                            ACCA Qualified
+                        </h3>
+
+                        <p>
+                            Professional accounting qualification
+                            with extensive teaching experience.
+                        </p>
+
+                    </div>
+
+
+                    <div class="althaf-qualification">
+
+                        <h3>
+                            BSc (Hons) Applied Accounting
+                        </h3>
+
+                        <p>
+                            Oxford Brookes University
+                        </p>
+
+                    </div>
+
+
+                    <div class="althaf-qualification">
+
+                        <h3>
+                            Teaching & Training
+                        </h3>
+
+                        <p>
+                            Experienced lecturer in accounting,
+                            finance and related professional subjects.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- SUBJECTS -->
+
+                <div class="althaf-subjects">
+
+                    <h2>
+                        Subjects Taught
+                    </h2>
+
+                    <div class="althaf-subject-list">
+
+                        <div class="althaf-subject">
+                            Financial Accounting
+                        </div>
+
+                        <div class="althaf-subject">
+                            Management Accounting
+                        </div>
+
+                        <div class="althaf-subject">
+                            Financial Management
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- QUOTE -->
+
+                <div class="althaf-quote">
+
+                    <div class="althaf-quote-mark">
+                        “
+                    </div>
+
+                    <p>
+                        The goal is not just to help students pass an exam,
+                        but to help them truly understand Accounting.
+                    </p>
+
+                    <div class="althaf-quote-name">
+                        Althaf Haaris
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-inner">
+
+            <p>
+                LEARN WITH ALTHAF
+            </p>
+
+            <p>
+                A Class Beyond the Best
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =====================================================
+         SCRIPT
+         ===================================================== -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

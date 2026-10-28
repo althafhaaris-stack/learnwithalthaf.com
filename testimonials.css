@@ -1,0 +1,388 @@
+/* =========================================================
+   STUDENT TESTIMONIALS / RESULTS PAGE
+   LEARN WITH ALTHAF
+   ========================================================= */
+
+/* MAIN PAGE CONTAINER */
+.results-page {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 0 100px;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.results-heading {
+    width: 100%;
+    margin-bottom: 35px;
+    text-align: left;
+}
+
+.results-label {
+    margin-bottom: 8px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #777777;
+    text-transform: uppercase;
+}
+
+.results-heading h1 {
+    margin: 0;
+    font-size: 38px;
+    line-height: 1.1;
+    font-weight: 800;
+    color: #111111;
+}
+
+.results-heading-line {
+    width: 48px;
+    height: 3px;
+    margin: 16px 0;
+    background: #111111;
+    border-radius: 2px;
+}
+
+.results-heading p {
+    margin: 0;
+    max-width: 700px;
+    font-size: 15px;
+    line-height: 1.55;
+    color: #777777;
+}
+
+
+/* =========================================================
+   OLD FILTER — HIDDEN
+========================================================= */
+
+.filter-container {
+    display: none !important;
+}
+
+
+/* =========================================================
+   TESTIMONIALS CONTAINER
+========================================================= */
+
+#results-book {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.testimonials-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+
+/* =========================================================
+   STUDENT CARD
+========================================================= */
+
+.student-card {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #dedede;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: none;
+    transition: all 0.25s ease;
+}
+
+.student-card:hover {
+    border-color: #111111;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+}
+
+
+/* =========================================================
+   MAIN STUDENT AREA
+========================================================= */
+
+.student-main {
+    width: 100%;
+    min-height: 190px;
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    padding: 24px;
+}
+
+
+/* =========================================================
+   LEFT SIDE
+========================================================= */
+
+.student-left {
+    min-width: 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding-right: 15px;
+}
+
+
+/* =========================================================
+   PHOTO
+========================================================= */
+
+.student-photo,
+.student-photo-placeholder {
+    width: 92px;
+    height: 92px;
+    flex: 0 0 92px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #dcdcdc;
+}
+
+.student-photo-placeholder {
+    background: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999999;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   STUDENT BASIC INFORMATION
+========================================================= */
+
+.student-basic {
+    min-width: 0;
+    padding-top: 3px;
+}
+
+.student-name {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+    line-height: 1.25;
+    font-weight: 700;
+    color: #111111;
+}
+
+.student-school {
+    margin: 0 0 8px 0;
+    font-size: 12px;
+    line-height: 1.4;
+    color: #777777;
+}
+
+.student-year {
+    display: inline-block;
+    margin-bottom: 12px;
+    font-size: 11px;
+    color: #111111;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   BADGES
+========================================================= */
+
+.student-badges {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.badge-3a,
+.badge-accounting {
+    display: inline-flex;
+    align-items: center;
+    min-height: 24px;
+    padding: 4px 9px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.badge-3a {
+    background: #111111;
+    color: #ffffff;
+}
+
+.badge-accounting {
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    color: #333333;
+}
+
+
+/* =========================================================
+   RIGHT SIDE — RESULTS
+========================================================= */
+
+.student-right {
+    min-width: 0;
+    padding-left: 15px;
+    border-left: 1px solid #eeeeee;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+/* =========================================================
+   RESULT ITEM
+========================================================= */
+
+.result-item {
+    width: 100%;
+    min-height: 38px;
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.result-item:last-child {
+    border-bottom: none;
+}
+
+.result-label {
+    font-size: 11px;
+    color: #777777;
+    white-space: nowrap;
+}
+
+.result-value {
+    min-width: 0;
+    font-size: 12px;
+    font-weight: 700;
+    color: #111111;
+    text-align: left;
+    overflow-wrap: anywhere;
+}
+
+
+/* =========================================================
+   TESTIMONIAL
+========================================================= */
+
+.student-testimonial {
+    width: calc(100% - 48px);
+    margin: 0 24px 24px 24px;
+    padding: 18px 20px;
+    background: #f8f8f8;
+    border-radius: 6px;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #444444;
+    font-style: italic;
+}
+
+.testimonial-quote {
+    display: inline-block;
+    margin-right: 8px;
+    font-size: 25px;
+    line-height: 0;
+    font-style: normal;
+    font-weight: 800;
+    color: #222222;
+    vertical-align: -4px;
+}
+
+.testimonial-content {
+    display: inline;
+}
+
+
+/* =========================================================
+   LOADING / ERROR
+========================================================= */
+
+.results-loading,
+.results-error {
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 13px;
+    color: #777777;
+}
+
+
+/* =========================================================
+   RESPONSIVENESS
+========================================================= */
+
+@media (max-width: 800px) {
+
+    .student-main {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .student-left {
+        padding-right: 0;
+    }
+
+    .student-right {
+        padding-left: 0;
+        border-left: none;
+        border-top: 1px solid #eeeeee;
+        padding-top: 10px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .results-page {
+        width: 90%;
+        padding: 40px 0 70px;
+    }
+
+    .results-heading h1 {
+        font-size: 28px;
+    }
+
+    .results-heading p {
+        font-size: 13px;
+    }
+
+    .student-main {
+        padding: 18px;
+    }
+
+    .student-left {
+        gap: 14px;
+    }
+
+    .student-photo,
+    .student-photo-placeholder {
+        width: 70px;
+        height: 70px;
+        flex-basis: 70px;
+    }
+
+    .student-name {
+        font-size: 16px;
+    }
+
+    .student-school {
+        font-size: 11px;
+    }
+
+    .student-testimonial {
+        width: calc(100% - 36px);
+        margin: 0 18px 18px 18px;
+        padding: 15px;
+    }
+
+}
