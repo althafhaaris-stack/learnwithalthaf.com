@@ -1,6 +1,6 @@
 /* =========================================================
    RESULTS PAGE — LEARN WITH ALTHAF
-   SUMMARY + RESULTS BOOK
+   SUMMARY + A/L RESULTS BOOK
    ========================================================= */
 
 
@@ -611,7 +611,7 @@ function splitSpecialResults(value) {
 
 
 /* =========================================================
-   LOAD RESULTS BOOK
+   LOAD A/L RESULTS BOOK
    ========================================================= */
 
 function loadResultsBook() {
@@ -1279,7 +1279,7 @@ function loadResultsBook() {
         .catch(error => {
 
             console.error(
-                "Results Book Error:",
+                "A/L Results Book Error:",
                 error
             );
 
